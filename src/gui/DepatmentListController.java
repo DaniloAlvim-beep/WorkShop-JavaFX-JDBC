@@ -74,8 +74,8 @@ public class DepatmentListController implements Initializable, DataChangeListene
 	}
 
 	private void InitializeNodes() {
-		tableColumnId.setCellValueFactory(new PropertyValueFactory<>("Id"));
-		tableColumnName.setCellValueFactory(new PropertyValueFactory<>("Name"));
+		tableColumnId.setCellValueFactory(new PropertyValueFactory<>("id"));
+		tableColumnName.setCellValueFactory(new PropertyValueFactory<>("name"));
 
 		Stage stage = (Stage) Main.getMainScene().getWindow();
 		tableViewDepartment.prefHeightProperty().bind(stage.heightProperty());
